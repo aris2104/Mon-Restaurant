@@ -1,0 +1,170 @@
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        p {
+            font-weight: 300;
+            color: #1111;
+        }
+        
+        header {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            padding: 20px 10px;
+            z-index: 1;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            transition: 0.5s;
+        }
+        
+        .logo {
+            color: #fff;
+            font-weight: bold;
+            font-size: 2em;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #fb911f;
+        }
+        
+        .navbar {
+            display: flex;
+            position: relative;
+        }
+        
+        .navbar li {
+            list-style: none;
+        }
+        
+        .navbar a {
+            /color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 700;
+        }
+        
+        .btn-reserve {
+            padding: 10px 20px;
+            color: cornflowerblue;
+            background: #fb911f;
+            margin-top: -10px;
+        }
+        
+        .btn-reserve:hover {
+            color: aqua;
+            background: #fb911f;
+            transition: ease-in-out;
+        }
+        
+        header .navbar li a:hover {
+            border-bottom: 10px solid #fb911f;
+            border-left: ease-in-out;
+        }
+        
+        .banniere {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(OIP.jpg);
+            background-size: cover;
+            background-color: burlywood;
+        }
+        
+        .banniere .contenu {
+            text-align: center;
+            max-width: 70%;
+            background-color: #fb911f;
+        }
+        
+        .banniere .contenu h2 {
+            color: #110101;
+            font-size: 150%;
+        }
+        
+        .contenu p:nth-child(2) {
+            color: #fff;
+            font-size: 85%;
+        }
+        
+        .btn1 {
+            font-size: 40%;
+            color: #fb911f;
+            background-color: bisque;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: 0.5s;
+            margin-left: 10px;
+        }
+        
+        .btn2 {
+            font-size: 40%;
+            color: #fb911f;
+            background-color: black;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: 0.5s;
+            margin-left: 10px;
+        }
+        
+        .btn1:hover {
+            letter-spacing: 4px;
+        }
+        
+        @media screen and (max-width: 900px) {
+            .navbar {
+                display: flex;
+                backdrop-filter: blur(0.5px);
+                height: 2000vh;
+                width: 100vw;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                right: 0px;
+                left: 0px;
+                align-items: center;
+                flex-direction: column;
+            }
+            .logo {
+                position: absolute;
+                left: 20px;
+                top: 10px;
+            }
+            header .logo {
+                position: absolute;
+                z-index: 1;
+            }
+            .navbar li {
+                position: relative;
+                line-height: 2;
+                margin: 30px 25px;
+                font-size: 1.2em;
+                margin: -100;
+            }
+            .mobile-menu {
+                position: absolute;
+                margin-top: 0;
+                left: 0;
+            }
+            .contenu {
+                display: none;
+            }
+        }
